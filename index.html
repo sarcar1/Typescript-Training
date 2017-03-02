@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learning TypeScript</title>
     <!--
@@ -14,11 +14,27 @@
     <script src="es6-exercise.js"></script>
     <script src="classes.js"></script>
     <script src="classes-exercise.js"></script>
-    -->
+    <script src="namespaces.js"></script>
     <script src="modules.js"></script>
-    
+    -->
+    <script src="node_modules/systemjs/dist/system.js"></script>
+
+    <script>
+        SystemJS.config({
+            baseURL:'/',
+            packages: {
+                '/': {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        SystemJS.import('/modules.js');
+    </script>
+
 </head>
+
 <body>
-Hello!
+    Hello!
 </body>
+
 </html>

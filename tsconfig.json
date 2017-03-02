@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        // compile my ts file into common js
+        // compiled to meet the common js modules standard
         "module": "commonjs",
         // set target to es3, es6, etc.
         "target": "es5",
