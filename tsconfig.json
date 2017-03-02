@@ -25,6 +25,7 @@
         "node_modules",
         "app.ts",
         "compilator.ts",
+        "es6.ts",
         "exercise.ts"
     ]
 }

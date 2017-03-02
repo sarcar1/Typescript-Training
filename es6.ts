@@ -83,5 +83,5 @@ How are you?
 `;
 console.log(greeting);
 
-console.log("Symbols, Iterators, Generators in ES6 course.");
+console.log(">>>>>>>>>>>>>>>> Symbols, Iterators, Generators in ES6 course.");
 
