@@ -23,9 +23,18 @@
     // exlcude form compilation the downloaded modules
     "exclude": [
         "node_modules",
-        "app.ts",
+        // types
+        "types.ts",
+        "types-exercise.ts",
+        "types-exercise-max.ts",
+        // compilator options
         "compilator.ts",
+        // es6
         "es6.ts",
-        "exercise.ts"
+        "es6-exercise-max.ts",
+        // classes
+        "classes.ts",
+        "classes-exercise.ts",
+        "classes-exercise-max.ts"
     ]
 }
