@@ -1,4 +1,4 @@
-// Use modules to write medium to big applications
+// Use modules to write medium to big applications //
 
 // import { PI, calcCircumference } from "./math/circle";
 import * as Circle from "./math/circle";
