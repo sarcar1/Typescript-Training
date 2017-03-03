@@ -8,7 +8,7 @@ let myAge = 36;
 // or // let myAge: number = 36; // this is infered automatically by typescript
 // doesn't work // myAge = 'Raz';
 
-//bolean
+// bolean
 let hasHobbies = true;
 // or // let hasHobbies: boolean = true; // this is infered automatically by typescript
 // doesn't work // hasHobbies = 1;

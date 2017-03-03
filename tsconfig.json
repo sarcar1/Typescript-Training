@@ -3,7 +3,7 @@
         // compiled to meet the common js modules standard
         "module": "commonjs",
         // set target to es3, es6, etc.
-        "target": "es5",
+        "target": "es6",
         // does not allow implicit any, like for variable 'anythingVar'
         "noImplicitAny": true,
         // sourceMap allows for debugging in browser
@@ -35,6 +35,8 @@
         // classes
         "classes.ts",
         "classes-exercise.ts",
-        "classes-exercise-max.ts"
+        "classes-exercise-max.ts",
+        // generics
+        "generics.ts"
     ]
 }

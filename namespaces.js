@@ -4,7 +4,7 @@
 "use strict";
 var CircleMath = MyMath.Circle; // create an alias
 // this global scope
-var PI = 2.99;
+const PI = 2.99;
 console.log(PI); // PI is not the same PI as in MyMath namespace
 console.log(MyMath.Circle.calcCircumference(5));
 console.log(CircleMath.calcCircumference(5)); // use the alias

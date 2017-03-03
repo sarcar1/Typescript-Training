@@ -1,9 +1,9 @@
 // Use modules to write medium to big applications //
 "use strict";
 // import { PI, calcCircumference } from "./math/circle";
-var Circle = require("./math/circle");
-var rectangle_1 = require("./math/rectangle");
-var rectangle_2 = require("./math/rectangle");
+const Circle = require("./math/circle");
+const rectangle_1 = require("./math/rectangle");
+const rectangle_2 = require("./math/rectangle");
 // console.log(PI);
 console.log(Circle.PI);
 // console.log(calcCircumference(5));
