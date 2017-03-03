@@ -21,6 +21,7 @@ class MyMap<T> {
     }
     // clear() // should remove all key-value pairs
     clear() {
+        this._pair.clear; // ? doesn't work
     }
     // printMap() // should output key-value pairs
     printMap() {
@@ -33,6 +34,7 @@ class MyMap<T> {
 }
 
 // The map should be usable like shown below:
+console.log(">>> With T as number");
 
 const numberMap = new MyMap<number>();
 numberMap.setItem('apples', 5);
@@ -45,12 +47,16 @@ console.log("Number of bananas: ",numberMap.getItem('bananas'));
 numberMap.setItem('cramberries', 25);
 console.log("Number of cramberries: ",numberMap.getItem('cramberries'));
 numberMap.printMap();
+numberMap.clear;
+console.log("printing again, should be 0");
+numberMap.printMap();
 
- 
-// const stringMap = new MyMap<string>();
-// stringMap.setItem('name', "Max");
-// console.log(stringMap.getItem('name'));
-// stringMap.setItem('age', "27");
-// console.log(stringMap.getItem('age'));
-// console.log(numberMap.printMap());
+console.log(">>> Now with T as string");
+
+const stringMap = new MyMap<string>();
+stringMap.setItem('name', "Max");
+console.log(stringMap.getItem('name'));
+stringMap.setItem('age', "27");
+console.log(stringMap.getItem('age'));
+stringMap.printMap();
 

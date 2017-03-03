@@ -19,35 +19,38 @@ class MyMap {
     }
     // clear() // should remove all key-value pairs
     clear() {
-        // this._pair.entries() .forEach( function(key) {
-        //     this._pair.delete(key);
-        // });
+        this._pair.clear; // ? doesn't work
     }
     // printMap() // should output key-value pairs
     printMap() {
-        this._pair.forEach(function (element, key, map) {
-            console.log(element); // prints value
+        this._pair.forEach(function (value, key, map) {
+            console.log(value); // prints value
             console.log(key); // prints key
             console.log(map); // prints entire map
         });
     }
 }
 // The map should be usable like shown below:
+console.log(">>> With T as number");
 const numberMap = new MyMap();
 numberMap.setItem('apples', 5);
-numberMap.setItem('apples', 6); // error on new push?
+numberMap.setItem('apples', 6); // overwrites the 'apples' value with 6
 console.log("Number of apples: ", numberMap.getItem('apples'));
 console.log("removing apples");
-numberMap.clear;
+numberMap.delete('apples');
 numberMap.setItem('bananas', 10);
 console.log("Number of bananas: ", numberMap.getItem('bananas'));
 numberMap.setItem('cramberries', 25);
 console.log("Number of cramberries: ", numberMap.getItem('cramberries'));
 numberMap.printMap();
-// const stringMap = new MyMap<string>();
-// stringMap.setItem('name', "Max");
-// console.log(stringMap.getItem('name'));
-// stringMap.setItem('age', "27");
-// console.log(stringMap.getItem('age'));
-// console.log(numberMap.printMap());
+numberMap.clear;
+console.log("printing again, should be 0");
+numberMap.printMap();
+console.log(">>> Now with T as string");
+const stringMap = new MyMap();
+stringMap.setItem('name', "Max");
+console.log(stringMap.getItem('name'));
+stringMap.setItem('age', "27");
+console.log(stringMap.getItem('age'));
+stringMap.printMap();
 //# sourceMappingURL=generics-exercise.js.map
